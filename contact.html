@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Career Gateway</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+        /* Your existing styles here */
+        /* Additional Styling for Attractiveness */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        section.hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            /* Increased font size */
+            color: black;
+            /* Black color */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 28px;
+            color: #000000;
+        }
+        
+        p {
+            font-size: 26px;
+            line-height: 1.6;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        .submit-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+        
+        .error-message,
+        .success-message {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #d63031;
+        }
+    </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <section class="hero">
+        <h1>Career Gateway</h1>
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you. Drop us a message below.</p>
+    </section>
+
+    <div class="form-container">
+        <h3>Contact Form</h3>
+        <form id="contactForm">
+            <label for="from_name" class="form-label">Your Name</label>
+            <input type="text" name="from_name" id="from_name" class="form-input" required>
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" name="email" id="email" class="form-input" required>
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" id="message" class="message-box" required></textarea>
+            <label for="questions" class="form-label">Select a Question:</label>
+            <select id="questions" class="form-input">
+              <option value="">Choose a question...</option>
+              <option value="What subjects are taught at your coaching center?">What subjects are taught at your coaching center?</option>
+              <option value="How do I enroll for coaching classes?">How do I enroll for coaching classes?</option>
+              <option value="What is the fee structure for coaching classes?">What is the fee structure for coaching classes?</option>
+              <option value="Can you provide information about your coaching center's location?">Can you provide information about your coaching center's location?</option>
+              <!-- Add more coaching-related questions as needed -->
+          </select>
+            <button type="submit" class="submit-button">Send Message</button>
+            <p class="error-message" id="errorText"></p>
+            <p class="success-message" id="successText"></p>
+        </form>
+    </div>
+
+
+    <script src="emailjs_init.js"></script>
+    <script src="contact_form.js"></script>
+</body>
+
+</html>

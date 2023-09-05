@@ -1,0 +1,99 @@
+/* Reset some default styles to ensure consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Style the header */
+header {
+    background-color: #00bcd4; /* Bright cyan header background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the logo */
+.logo {
+    max-width: 90%px;
+    height: 210px;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #00bcde; /* Bright cyan navigation background */
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0000f;
+    font-weight: bold;
+    transition: color 0.6s;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Style the main content section */
+main {
+    padding: 30px;
+}
+
+/* Style the attractive box */
+.attractive-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+/* Style the teacher's name */
+.teacher-name {
+    font-size: 24px;
+    color: #00bcd4; /* Bright cyan teacher name color */
+    margin-top: 10px;
+}
+
+/* Style the teacher's photo */
+.teacher-photo {
+    max-width: 10%;
+    height: 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add a hover effect to make the photo slightly larger */
+.teacher-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Style the footer */
+footer {
+    background-color: #00bcd4; /* Bright cyan footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
